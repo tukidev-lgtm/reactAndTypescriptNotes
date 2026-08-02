@@ -1,4 +1,4 @@
-const myPromise = new Promise<SVGAnimatedNumber>((resolve, reject) => {
+const myPromise = new Promise<Number>((resolve, reject) => {
     setTimeout(() => {
         //resolve(100)
         reject('Something went wrong')
