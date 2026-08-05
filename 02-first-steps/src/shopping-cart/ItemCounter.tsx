@@ -15,6 +15,8 @@ export const ItemCounter = ({itemName, quantity = 1}: itemCounterProps) => {
     setCount(count +1)
   }
   const HandleSubstract = () =>{
+    if (count === 1) return;
+
     setCount(count - 1);
   }
 

@@ -14,14 +14,15 @@ export function MyAwesomeApp() {
 
     return(
         <>
-        
-        <h1>{firstName}</h1>
+        <div data-testid= "div-app">
+        <h1 data-testid='first-name-title'>{firstName}</h1>
         <h3>{lastname}</h3>
         <p>{favoriteGames}</p>
         <h1>{isActive ? 'Active' : 'Inactive'}</h1>
         <p>
             {JSON.stringify(adress)}
         </p>
+        </div>
         </>
     )
 }
